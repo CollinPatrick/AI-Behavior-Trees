@@ -1,4 +1,7 @@
 #pragma once
+#ifndef NODE_H
+#define NODE_H
+
 namespace BehaviorTrees {
 	class Node
 	{
@@ -7,4 +10,5 @@ namespace BehaviorTrees {
 		~Node();
 	};
 }
+#endif
 

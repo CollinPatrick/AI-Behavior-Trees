@@ -1,5 +1,8 @@
 #pragma once
-using BehaviorTrees::Node;
+#ifndef BEHAVIOR_TREE_H
+#define BEHAVIOR_TREE_H
+
+#include "Node.h"
 
 namespace BehaviorTrees {
 	class BehaviorTree
@@ -13,4 +16,6 @@ namespace BehaviorTrees {
 		Node *root;
 	};
 }
+
+#endif
 

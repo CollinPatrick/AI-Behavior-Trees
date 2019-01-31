@@ -4,8 +4,6 @@
 #include "stdafx.h"
 //Add to files using behavior tree
 #include "BTLibrary.h"
-//using BehaviorTrees::BehaviorTree;
-
 
 int main()
 {
