@@ -2,7 +2,7 @@
 #ifndef NODE_H
 #define NODE_H
 
-namespace BehaviorTrees {
+namespace BehaviorTrees{
 	class Node
 	{
 	public:
@@ -18,8 +18,6 @@ namespace BehaviorTrees {
 		};
 		Status status;
 
-		virtual void GetNode() = 0;
-		virtual void SetNode() = 0;
 		virtual void Action() = 0;
 	};
 }

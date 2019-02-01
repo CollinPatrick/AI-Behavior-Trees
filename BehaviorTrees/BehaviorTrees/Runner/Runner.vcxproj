@@ -149,7 +149,6 @@
     <ClInclude Include="BTLibrary.h" />
     <ClInclude Include="CompositeNode.h" />
     <ClInclude Include="Node.h" />
-    <ClInclude Include="stdafx.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="BehaviorTree.cpp" />

@@ -4,13 +4,14 @@
 #include "Node.h"
 
 namespace BehaviorTrees {
-	class BehaviorTree
+	class BehaviorTree : public Node	//If used as a node, Tree is classified as a subtree
 	{
 	public:
 		BehaviorTree();
 		~BehaviorTree();
 
 		void StartBehaviorTree();
+		void Action();
 
 		Node *root;
 	};

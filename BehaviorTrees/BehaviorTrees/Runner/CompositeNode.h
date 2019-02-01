@@ -1,17 +1,18 @@
 #pragma once
 #ifndef COMPOSITE_NODE_H
 #define COMPOSITE_NODE_H
+#include <list>
 #include "Node.h"
 
-class CompositeNode : public BehaviorTrees::Node 
-{
-public:
-	CompositeNode();
-	~CompositeNode();
-	void GetNode();
-	void SetNode();
-	void Action();
-	int test = 50;
-};
+namespace BehaviorTrees {
+	class CompositeNode : public BehaviorTrees::Node
+	{
+	public:
+		CompositeNode();
+		~CompositeNode();
+		void Action();
+		std::list<Node*> branches;
+	};
+}
 #endif
 
