@@ -1,14 +1,16 @@
-// Runner.cpp : Defines the entry point for the console application.
-//
+#include <iostream>
+using std::cout; using std::endl;
 
-#include "stdafx.h"
 //Add to files using behavior tree
 #include "BTLibrary.h"
+
 
 int main()
 {
 	BehaviorTrees::BehaviorTree tree = BehaviorTrees::BehaviorTree();
-	tree.root = new BehaviorTrees::Node();
+	tree.root = new CompositeNode;
+	tree.root->status = tree.root->RUNNING;
+	tree.StartBehaviorTree();
 
     return 0;
 }

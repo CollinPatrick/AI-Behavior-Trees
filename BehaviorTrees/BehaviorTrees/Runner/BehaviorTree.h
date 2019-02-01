@@ -1,7 +1,6 @@
 #pragma once
 #ifndef BEHAVIOR_TREE_H
 #define BEHAVIOR_TREE_H
-
 #include "Node.h"
 
 namespace BehaviorTrees {
