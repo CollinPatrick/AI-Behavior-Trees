@@ -11,7 +11,7 @@ BehaviorTree tree;
 
 AIController::AIController()
 {
-	tree = BehaviorTree();
+	tree = BehaviorTree(); 
 	{
 		SequenceNode *node = new SequenceNode;
 		{
