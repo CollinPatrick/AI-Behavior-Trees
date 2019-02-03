@@ -1,24 +1,24 @@
 #include "AIController.h"
 #include <thread>
 #include <iostream>
+
 #include "BTLibrary.h"
-using BehaviorTrees::SequenceNode; using BehaviorTrees::BehaviorTree; using BehaviorTrees::LeafNode;
+using BehaviorTrees::BehaviorTree; using BehaviorTrees::SequenceNode;
 
-//CustomNodes
-#include "WalkToDoorLeaf.h"
+//Premade sub trees
+#include "WalkThroughDoorTree.h"
+using PreBuiltTrees::WalkThroughDoorTree;
 
-BehaviorTree tree;
+BehaviorTree* tree_Main;
 
 AIController::AIController()
 {
-	tree = BehaviorTree(); 
+	tree_Main = new BehaviorTree(); 
 	{
-		SequenceNode *node = new SequenceNode;
+		SequenceNode* sequenceOne = new SequenceNode();
+		tree_Main->root = sequenceOne;
 		{
-			tree.root = node;
-
-			WalkToDoorLeaf* walkToDoor = new WalkToDoorLeaf();
-			node->branches.push_back(walkToDoor);
+			sequenceOne->branches.push_back(WalkThroughDoorTree(new Door()));
 		}
 	}
 }
@@ -30,6 +30,6 @@ AIController::~AIController()
 
 void AIController::RunAI()
 {
-	std::thread thread(&BehaviorTree::StartBehaviorTree, tree);
+	std::thread thread(&BehaviorTree::StartBehaviorTree, tree_Main);
 	thread.join();
 }

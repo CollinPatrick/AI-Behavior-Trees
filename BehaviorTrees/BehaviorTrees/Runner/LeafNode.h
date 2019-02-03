@@ -3,7 +3,7 @@
 #define LEAF_NODE_H
 #include "Node.h"
 
-//USED ONLY FOR QUICK IMPLIMENTAION OF ACTIONS THAT WONT BE REUSED
+
 namespace BehaviorTrees {
 	class LeafNode : public BehaviorTrees::Node
 	{
@@ -16,8 +16,10 @@ namespace BehaviorTrees {
 }
 
 #endif
+
 /*
-LeafNode* leaf2 = new LeafNode;
+//USED ONLY FOR QUICK IMPLIMENTAION OF ACTIONS THAT WONT BE REUSED
+LeafNode* leaf = new LeafNode;
 leaf2->Action = []()
 {
 	cout << "CUSTOM LEAF NODE TWO" << endl;

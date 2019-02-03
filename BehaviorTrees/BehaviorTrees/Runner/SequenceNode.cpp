@@ -21,12 +21,12 @@ void SequenceNode::Action()
 	{
 		i->Action();
 		while (i->status == RUNNING) {}
-		if (i->status = FAILED) { break; } //ADD CATCH TO FAILED ACTION
+		if (i->status == FAILED) { status = FAILED; break; } //ADD CATCH TO FAILED ACTION
 
 		//threads.push_back(new std::thread(&Node::Action, i));
 		//thread.join();
 	}
-	std::cout << "TEST" << std::endl;
+	status = SUCCESS;
 }
 
 

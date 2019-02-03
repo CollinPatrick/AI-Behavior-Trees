@@ -13,54 +13,114 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Header Files\Core">
+      <UniqueIdentifier>{7e229a0a-eddb-4bd2-a009-f610197b50a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Core">
+      <UniqueIdentifier>{b8f48969-5413-42ac-b396-a098b5bf2dae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\CustomNodes">
+      <UniqueIdentifier>{cc382568-1f7e-43a4-965b-14ebc3af2910}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\CustomNodes\DataStructures">
+      <UniqueIdentifier>{abe71407-bb3f-4ab7-b167-76344667c29d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Trees">
+      <UniqueIdentifier>{23c5b8f2-6559-4dc3-860d-4683cd4206a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\ExampleObjects">
+      <UniqueIdentifier>{22585c89-438e-4a89-b6d9-47783413f12c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ExampleObjects">
+      <UniqueIdentifier>{50923613-cb11-4af8-97ee-6b22f02e1e3a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Trees">
+      <UniqueIdentifier>{cc4e2540-a76f-4e93-99cf-514cc308b914}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\CustomNodes">
+      <UniqueIdentifier>{2c295f75-f699-4c4f-8e87-15b2fac190da}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="BehaviorTree.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="BTLibrary.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Node.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="LeafNode.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="SequenceNode.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="AIController.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="WalkToDoorLeaf.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="BehaviorTree.h">
+      <Filter>Header Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="LeafNode.h">
+      <Filter>Header Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Node.h">
+      <Filter>Header Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="SequenceNode.h">
+      <Filter>Header Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="BTLibrary.h">
+      <Filter>Header Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenDoorLeaf.h">
+      <Filter>Header Files\CustomNodes</Filter>
+    </ClInclude>
+    <ClInclude Include="WalkThroughDoorLeaf.h">
+      <Filter>Header Files\CustomNodes</Filter>
+    </ClInclude>
+    <ClInclude Include="CloseDoorLeaf.h">
+      <Filter>Header Files\CustomNodes</Filter>
+    </ClInclude>
+    <ClInclude Include="WalkToLeaf.h">
+      <Filter>Header Files\CustomNodes</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector3.h">
+      <Filter>Header Files\CustomNodes\DataStructures</Filter>
+    </ClInclude>
+    <ClInclude Include="WalkThroughDoorTree.h">
+      <Filter>Header Files\Trees</Filter>
+    </ClInclude>
+    <ClInclude Include="Door.h">
+      <Filter>Header Files\ExampleObjects</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Runner.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="BehaviorTree.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Node.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="LeafNode.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="SequenceNode.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="AIController.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="WalkToDoorLeaf.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="BehaviorTree.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="LeafNode.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Node.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="SequenceNode.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="WalkThroughDoorTree.cpp">
+      <Filter>Source Files\Trees</Filter>
+    </ClCompile>
+    <ClCompile Include="Door.cpp">
+      <Filter>Source Files\ExampleObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="WalkToLeaf.cpp">
+      <Filter>Source Files\CustomNodes</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenDoorLeaf.cpp">
+      <Filter>Source Files\CustomNodes</Filter>
+    </ClCompile>
+    <ClCompile Include="CloseDoorLeaf.cpp">
+      <Filter>Source Files\CustomNodes</Filter>
+    </ClCompile>
+    <ClCompile Include="WalkThroughDoorLeaf.cpp">
+      <Filter>Source Files\CustomNodes</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
