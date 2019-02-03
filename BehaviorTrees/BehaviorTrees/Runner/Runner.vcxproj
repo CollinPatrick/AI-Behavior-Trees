@@ -145,16 +145,22 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="AIController.h" />
     <ClInclude Include="BehaviorTree.h" />
     <ClInclude Include="BTLibrary.h" />
-    <ClInclude Include="CompositeNode.h" />
+    <ClInclude Include="SequenceNode.h" />
+    <ClInclude Include="LeafNode.h" />
     <ClInclude Include="Node.h" />
+    <ClInclude Include="WalkToDoorLeaf.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="AIController.cpp" />
     <ClCompile Include="BehaviorTree.cpp" />
-    <ClCompile Include="CompositeNode.cpp" />
+    <ClCompile Include="SequenceNode.cpp" />
+    <ClCompile Include="LeafNode.cpp" />
     <ClCompile Include="Node.cpp" />
     <ClCompile Include="Runner.cpp" />
+    <ClCompile Include="WalkToDoorLeaf.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

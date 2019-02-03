@@ -1,4 +1,6 @@
 #pragma once
+#include <thread>
 #include "BehaviorTree.h"
 #include "Node.h"
-#include "CompositeNode.h"
+#include "SequenceNode.h"
+#include "LeafNode.h"

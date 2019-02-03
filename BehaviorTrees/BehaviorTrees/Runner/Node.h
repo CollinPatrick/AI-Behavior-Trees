@@ -17,7 +17,6 @@ namespace BehaviorTrees{
 			FAILED
 		};
 		Status status;
-
 		virtual void Action() = 0;
 	};
 }
