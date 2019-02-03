@@ -40,6 +40,9 @@
     <Filter Include="Source Files\CustomNodes">
       <UniqueIdentifier>{2c295f75-f699-4c4f-8e87-15b2fac190da}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Interfaces">
+      <UniqueIdentifier>{bf73b534-30f0-4f86-8f3c-e6b04f26ae4b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -63,15 +66,6 @@
     <ClInclude Include="BTLibrary.h">
       <Filter>Header Files\Core</Filter>
     </ClInclude>
-    <ClInclude Include="OpenDoorLeaf.h">
-      <Filter>Header Files\CustomNodes</Filter>
-    </ClInclude>
-    <ClInclude Include="WalkThroughDoorLeaf.h">
-      <Filter>Header Files\CustomNodes</Filter>
-    </ClInclude>
-    <ClInclude Include="CloseDoorLeaf.h">
-      <Filter>Header Files\CustomNodes</Filter>
-    </ClInclude>
     <ClInclude Include="WalkToLeaf.h">
       <Filter>Header Files\CustomNodes</Filter>
     </ClInclude>
@@ -83,6 +77,15 @@
     </ClInclude>
     <ClInclude Include="Door.h">
       <Filter>Header Files\ExampleObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="InteractObjectLeaf.h">
+      <Filter>Header Files\CustomNodes</Filter>
+    </ClInclude>
+    <ClInclude Include="IInteractable.h">
+      <Filter>Header Files\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="IGameObject.h">
+      <Filter>Header Files\Interfaces</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -113,13 +116,7 @@
     <ClCompile Include="WalkToLeaf.cpp">
       <Filter>Source Files\CustomNodes</Filter>
     </ClCompile>
-    <ClCompile Include="OpenDoorLeaf.cpp">
-      <Filter>Source Files\CustomNodes</Filter>
-    </ClCompile>
-    <ClCompile Include="CloseDoorLeaf.cpp">
-      <Filter>Source Files\CustomNodes</Filter>
-    </ClCompile>
-    <ClCompile Include="WalkThroughDoorLeaf.cpp">
+    <ClCompile Include="InteractObjectLeaf.cpp">
       <Filter>Source Files\CustomNodes</Filter>
     </ClCompile>
   </ItemGroup>

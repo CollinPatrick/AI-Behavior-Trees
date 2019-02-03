@@ -148,28 +148,26 @@
     <ClInclude Include="AIController.h" />
     <ClInclude Include="BehaviorTree.h" />
     <ClInclude Include="BTLibrary.h" />
-    <ClInclude Include="CloseDoorLeaf.h" />
     <ClInclude Include="Door.h" />
-    <ClInclude Include="OpenDoorLeaf.h" />
+    <ClInclude Include="IGameObject.h" />
+    <ClInclude Include="IInteractable.h" />
+    <ClInclude Include="InteractObjectLeaf.h" />
     <ClInclude Include="SequenceNode.h" />
     <ClInclude Include="LeafNode.h" />
     <ClInclude Include="Node.h" />
     <ClInclude Include="Vector3.h" />
-    <ClInclude Include="WalkThroughDoorLeaf.h" />
     <ClInclude Include="WalkThroughDoorTree.h" />
     <ClInclude Include="WalkToLeaf.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AIController.cpp" />
     <ClCompile Include="BehaviorTree.cpp" />
-    <ClCompile Include="CloseDoorLeaf.cpp" />
     <ClCompile Include="Door.cpp" />
-    <ClCompile Include="OpenDoorLeaf.cpp" />
+    <ClCompile Include="InteractObjectLeaf.cpp" />
     <ClCompile Include="SequenceNode.cpp" />
     <ClCompile Include="LeafNode.cpp" />
     <ClCompile Include="Node.cpp" />
     <ClCompile Include="Runner.cpp" />
-    <ClCompile Include="WalkThroughDoorLeaf.cpp" />
     <ClCompile Include="WalkThroughDoorTree.cpp" />
     <ClCompile Include="WalkToLeaf.cpp" />
   </ItemGroup>
