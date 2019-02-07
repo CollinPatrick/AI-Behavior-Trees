@@ -1,5 +1,5 @@
 #include "SequenceNode.h"
-#include <iostream> //Temp
+#include <thread>
 
 using BehaviorTrees::SequenceNode;
 using BehaviorTrees::Node;
@@ -19,12 +19,14 @@ void SequenceNode::Action()
 
 	for (Node* i : branches)
 	{
-		i->Action();
-		while (i->status == RUNNING) {}
-		if (i->status == FAILED) { status = FAILED; break; } //ADD CATCH TO FAILED ACTION
+		std::thread thread(&Node::Action, i);
+		thread.join();
 
-		//threads.push_back(new std::thread(&Node::Action, i));
-		//thread.join();
+		if (i->status == FAILED)
+		{ 
+			status = FAILED; 
+			break; 
+		}
 	}
 	status = SUCCESS;
 }

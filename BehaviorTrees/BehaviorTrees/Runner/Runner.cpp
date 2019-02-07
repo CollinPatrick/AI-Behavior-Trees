@@ -3,8 +3,8 @@
 
 int main()
 {
-	AIController* AI = new AIController();
-	AI->RunAI();
+	AIController AI = AIController();
+	AI.RunAI();
 
     return 0;
 }

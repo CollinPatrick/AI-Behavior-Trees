@@ -12,10 +12,9 @@ BehaviorTree* PreBuiltTrees::WalkThroughDoorTree(Door* door)
 {
 	BehaviorTree* temp = new BehaviorTree();
 	{
-		SequenceNode *interactDoor = new SequenceNode;
+		SequenceNode* interactDoor = new SequenceNode;
 		temp->root = interactDoor;
 		{
-			//CREATE OBJECT NODE TO GET INFO FROM
 			interactDoor->branches.push_back(new WalkToLeaf(door->position()));
 			interactDoor->branches.push_back(new InteractObjectLeaf(door));
 			interactDoor->branches.push_back(new WalkToLeaf(Vector3::Add(*door->position(), Vector3(1, 0, 0))));

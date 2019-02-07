@@ -87,6 +87,9 @@
     <ClInclude Include="IGameObject.h">
       <Filter>Header Files\Interfaces</Filter>
     </ClInclude>
+    <ClInclude Include="SelectionNode.h">
+      <Filter>Header Files\Core</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Runner.cpp">
@@ -118,6 +121,9 @@
     </ClCompile>
     <ClCompile Include="InteractObjectLeaf.cpp">
       <Filter>Source Files\CustomNodes</Filter>
+    </ClCompile>
+    <ClCompile Include="SelectionNode.cpp">
+      <Filter>Source Files\Core</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

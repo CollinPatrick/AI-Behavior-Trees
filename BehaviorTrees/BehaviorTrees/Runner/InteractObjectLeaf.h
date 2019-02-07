@@ -14,7 +14,7 @@ public:
 	void Action();
 
 private:
-	IInteractable * interactable;
+	IInteractable* interactable;
 };
 #endif // !OPEN_DOOR_LEAF_H
 

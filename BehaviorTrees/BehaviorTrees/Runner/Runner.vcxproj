@@ -152,6 +152,7 @@
     <ClInclude Include="IGameObject.h" />
     <ClInclude Include="IInteractable.h" />
     <ClInclude Include="InteractObjectLeaf.h" />
+    <ClInclude Include="SelectionNode.h" />
     <ClInclude Include="SequenceNode.h" />
     <ClInclude Include="LeafNode.h" />
     <ClInclude Include="Node.h" />
@@ -164,6 +165,7 @@
     <ClCompile Include="BehaviorTree.cpp" />
     <ClCompile Include="Door.cpp" />
     <ClCompile Include="InteractObjectLeaf.cpp" />
+    <ClCompile Include="SelectionNode.cpp" />
     <ClCompile Include="SequenceNode.cpp" />
     <ClCompile Include="LeafNode.cpp" />
     <ClCompile Include="Node.cpp" />
