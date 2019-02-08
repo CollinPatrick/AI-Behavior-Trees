@@ -8,7 +8,8 @@ public:
 	IInteractable() {};
 	virtual ~IInteractable() {};
 
-	virtual void Interact() = 0;
+	virtual int Interact() = 0;
+	virtual int Break() = 0;
 private:
 
 };

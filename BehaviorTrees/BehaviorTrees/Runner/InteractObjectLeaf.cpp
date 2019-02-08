@@ -14,6 +14,6 @@ InteractObjectLeaf::~InteractObjectLeaf()
 
 void InteractObjectLeaf::Action()
 {
-	interactable->Interact();
-	status = SUCCESS;
+	//int temp = interactable->Interact();
+	status = static_cast<Status>(interactable->Interact());
 }

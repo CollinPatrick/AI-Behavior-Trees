@@ -11,18 +11,37 @@ Door::~Door()
 {
 }
 
-void Door::Interact()
+int Door::Interact()
 {
-	if (isOpen) 
-	{
-		std::cout << "Closed Door" << std::endl;
+	if (!isBroken) {
+		if (!isLocked) {
+			if (isOpen)
+			{
+				std::cout << "Closed Door" << std::endl;
+			}
+			else
+			{
+				std::cout << "Opened Door" << std::endl;
+			}
+			isOpen = !isOpen;
+			return 0; //Success
+		}
+		else
+		{
+			std::cout << "Door is Locked" << std::endl;
+			return 2; //Fail
+		}
 	}
-	else 
+	else
 	{
-		std::cout << "Opened Door" << std::endl;
+		std::cout << "Door is Broken" << std::endl;
+		return 0;	//Success
 	}
+}
 
-	isOpen = !isOpen;
+int Door::Break()
+{
+	return 0;
 }
 
 Vector3* Door::position() 

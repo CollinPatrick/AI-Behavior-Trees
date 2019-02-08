@@ -28,7 +28,10 @@ void SequenceNode::Action()
 			break; 
 		}
 	}
-	status = SUCCESS;
+	if (status != FAILED)
+	{
+		status = SUCCESS;
+	}
 }
 
 

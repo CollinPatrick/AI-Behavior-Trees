@@ -4,7 +4,9 @@
 #include "Node.h"
 
 namespace BehaviorTrees {
-	class BehaviorTree : public Node	//If used as a node, Tree is classified as a subtree
+	//Starting point of all behavior trees
+	//If used as a node, Tree is used as an intermediate node and will redirect action to root
+	class BehaviorTree : public Node	
 	{
 	public:
 		BehaviorTree();
