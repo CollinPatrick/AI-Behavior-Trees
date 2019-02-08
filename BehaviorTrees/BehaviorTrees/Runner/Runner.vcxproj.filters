@@ -93,6 +93,9 @@
     <ClInclude Include="Key.h">
       <Filter>Header Files\ExampleObjects</Filter>
     </ClInclude>
+    <ClInclude Include="IConsumable.h">
+      <Filter>Header Files\Interfaces</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Runner.cpp">

@@ -149,6 +149,7 @@
     <ClInclude Include="BehaviorTree.h" />
     <ClInclude Include="BTLibrary.h" />
     <ClInclude Include="Door.h" />
+    <ClInclude Include="IConsumable.h" />
     <ClInclude Include="IGameObject.h" />
     <ClInclude Include="IInteractable.h" />
     <ClInclude Include="InteractObjectLeaf.h" />

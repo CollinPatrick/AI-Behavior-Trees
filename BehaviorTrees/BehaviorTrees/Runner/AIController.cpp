@@ -18,7 +18,9 @@ AIController::AIController()
 		SequenceNode* sequenceOne = new SequenceNode();
 		tree_Main->root = sequenceOne;
 		{
-			sequenceOne->branches.push_back(WalkThroughDoorTree(new Door(new Vector3(20,15,5))));
+			Door* door = new Door(new Vector3(20, 15, 5));
+			Key* key = new Key (door);
+			sequenceOne->branches.push_back(WalkThroughDoorTree(door, key));
 		}
 	}
 }
@@ -26,6 +28,7 @@ AIController::AIController()
 
 AIController::~AIController()
 {
+	delete tree_Main;
 }
 
 void AIController::RunAI()

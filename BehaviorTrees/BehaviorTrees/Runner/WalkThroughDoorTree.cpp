@@ -9,7 +9,7 @@ using BehaviorTrees::SequenceNode; using BehaviorTrees::BehaviorTree; using Beha
 #include "InteractObjectLeaf.h"
 
 
-BehaviorTree* PreBuiltTrees::WalkThroughDoorTree(Door* door)
+BehaviorTree* PreBuiltTrees::WalkThroughDoorTree(Door* door, Key* key)
 {
 	BehaviorTree* temp = new BehaviorTree();
 	{//using extra {} for readability and visual nest hierarchy
@@ -26,10 +26,10 @@ BehaviorTree* PreBuiltTrees::WalkThroughDoorTree(Door* door)
 				SequenceNode* unlockDoor = new SequenceNode;
 				doorInteractions->branches.push_back(unlockDoor);
 				{
-					//Unlock Door
-					//Open Door
+					//unlockDoor->branches.push_back(); //Unlock Door
+					unlockDoor->branches.push_back(new InteractObjectLeaf(door));
 				}
-				//Break Door
+				//doorInteractions->branches.push_back(); //Break Door
 			}
 			interactDoor->branches.push_back(new WalkToLeaf(Vector3::Add(*door->position(), Vector3(1, 0, 0))));
 			interactDoor->branches.push_back(new InteractObjectLeaf(door));
